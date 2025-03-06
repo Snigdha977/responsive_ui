@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Login Page</title>
+    <script>
+        function redirectToCounter(event) {
+            event.preventDefault(); // Prevent actual form submission
+            window.location.href = "counter.html"; // Redirect to Counter App
+        }
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .welcome-message {
+            font-size: 32px; /* Increased size */
+            font-weight: bold;
+            color: #0e0c0c; /* Changed color for better visibility */
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 3; /* Ensure it's above background images */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds visibility */
+        }
+
+        .background-img {
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+
+        /* Adjusted positions to evenly surround the login container and cover the screen */
+        .img1 { top: 0; left: 0; background-image: url('https://static.vecteezy.com/system/resources/thumbnails/050/392/866/small_2x/abstract-colorful-background-with-swirling-colors-silhouette-photo.jpg'); }
+        .img2 { top: 0; right: 0; background-image: url('https://img.freepik.com/premium-photo/colorful-image-leaves-flowers-with-vibrant-lively-mood-colors-are-bright-bold-creating-sense-energy-excitement-image-is-full-life-movement_99233-38634.jpg'); }
+        .img3 { bottom: 0; left: 0; background-image: url('https://img.freepik.com/free-photo/colorful-geometric-forms-ai-generated-image_268835-6989.jpg'); }
+        .img4 { bottom: 0; right: 0; background-image:url('https://thumbs.dreamstime.com/b/colorful-ink-water-inks-abstraction-38346159.jpg'); }
+        .login-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 420px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: calc(100% - 24px);
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="welcome-message">Welcome to Login page  !!</div>
+    <div class="background-img img1"></div>
+    <div class="background-img img2"></div>
+    <div class="background-img img3"></div>
+    <div class="background-img img4"></div>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="button" onclick="window.location.href='Counter_app.html'">Login</button>
+        </form>
+    </div>
+</body>
+</html>

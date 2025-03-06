@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family:'Copperplate', 'Papyrus',  fantasy;
+            font-style: italic;
+            background-color: #dbaa50; /* Exciting Yellow */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            padding: 32px;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        .grid-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .hero {
+            height: 600px; /* Enlarged hero section */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+        }
+        .navbar ul {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            list-style: none;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Counter_app.html">Counter_app</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://img.freepik.com/photos-premium/ordinateur-portable-site-web-ecran_900321-4312.jpg');">
+        <div class="hero-content">
+            <h2>Welcome to Our Website</h2>
+            <p>Your journey begins here.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <p>Discover what makes us unique.</p>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section id="gallery" class="image-grid">
+        <div class="grid-container">
+            <img src="https://st5.depositphotos.com/12279032/62063/i/450/depositphotos_620639410-stock-photo-autumnal-woodland-leaf-detail-captured.jpg">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY2xJtjMaPdtQdUzapoIOX1KEX0Rg-_6_gL3KGOXua7Y33KufWdIfGik_LaoGcLsJy0nYDCEccOyadC6z0cVEsZyDC2IbOg5HetIWRMa5AvmY6A_IDPZAOFTOf7pbU9NbDDxnOq3OJ08c/s1600/event+management.jpeg">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/029/276/529/small_2x/eternal-sands-time-s-surreal-embrace-photo.jpg">
+            <img src="https://media.cntraveler.com/photos/64879b50add73e0d14b17f9e/16:9/w_2580,c_limit/Most-Adventurous-things-to-do-in-your-lifetime-(update)_timur-garifov-sisZWCDkmwA-unsplash.jpg">
+            <img src="https://thumbs.dreamstime.com/b/vintage-ink-pen-dried-lavender-flowers-old-love-letters-retro-style-toned-picture-45199292.jpg">
+            <img src="https://thumbs.dreamstime.com/b/close-up-book-heart-symbol-table-retro-color-50358359.jpg">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more details.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
